@@ -1,0 +1,375 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --azul: #176b87;
+    --azul-oscuro: #12475b;
+    --celeste: #e8f8ff;
+    --texto: #243746;
+    --blanco: #ffffff;
+    --rosa: #ef7896;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #e8f8ff, #f8fbff, #e8f4ff);
+    min-height: 100vh;
+    color: var(--texto);
+}
+
+.encabezado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    padding: 28px 16px;
+    color: white;
+    text-align: left;
+    background: linear-gradient(135deg, #176b87, #279fc1);
+    box-shadow: 0 4px 15px #123b4b30;
+}
+
+.logo {
+    font-size: 48px;
+}
+
+.encabezado h1 {
+    font-size: clamp(24px, 4vw, 36px);
+    letter-spacing: 1px;
+}
+
+.encabezado p {
+    margin-top: 6px;
+}
+
+.contenedor-principal {
+    width: min(1200px, 94%);
+    margin: 28px auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 22px;
+    align-items: start;
+}
+
+.tarjeta {
+    background: var(--blanco);
+    padding: 24px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px #17475b12;
+    border: 1px solid #d8edf5;
+}
+
+.tarjeta h2 {
+    color: var(--azul-oscuro);
+    margin-bottom: 12px;
+}
+
+.instruccion {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.boca-container {
+    width: 100%;
+    overflow-x: auto;
+    padding: 15px 0;
+    border-radius: 18px;
+    background: #fff3f5;
+    border: 2px solid #f5c5d0;
+}
+
+.boca {
+    min-width: 720px;
+    width: 100%;
+    padding: 15px 8px;
+    text-align: center;
+    background: radial-gradient(ellipse, #ffe0e7 0%, #ffc5d1 70%, #ffb4c4 100%);
+    border-radius: 18px;
+}
+
+.titulo-arcada {
+    color: #853c52;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 8px 0 12px;
+}
+
+.teeth-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.tooth {
+    width: 6.05%;
+    min-width: 39px;
+    max-width: 54px;
+    height: 94px;
+    padding: 4px 2px;
+    border: 2px solid transparent;
+    border-radius: 9px;
+    background: #ffffffb8;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s, background 0.2s, border 0.2s;
+}
+
+.tooth img {
+    display: block;
+    width: 100%;
+    height: 66px;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+.tooth span {
+    color: #294252;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.tooth:hover {
+    transform: translateY(-4px);
+    background: #e4f8ff;
+    border-color: #45a9ca;
+}
+
+.tooth.seleccionado {
+    background: #b9edff;
+    border-color: #087da4;
+    box-shadow: 0 0 0 2px #087da430;
+}
+
+#upper-teeth .tooth img {
+    transform: rotate(180deg);
+}
+
+.espacio-boca {
+    height: 100px;
+    margin: 8px 3% 10px;
+    border-radius: 45%;
+    background: linear-gradient(180deg, #a93353, #721d3b);
+    border: 5px solid #f8a2b5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.lengua {
+    width: 38%;
+    height: 83%;
+    border-radius: 50% 50% 42% 42%;
+    background: linear-gradient(90deg, #d94872, #ff8daa, #d94872);
+    border: 2px solid #bd4166;
+    box-shadow: inset 0 4px 9px #ffffff45;
+}
+
+.leyenda {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.leyenda span {
+    flex: 1 1 145px;
+    padding: 10px;
+    background: var(--celeste);
+    border-radius: 9px;
+    font-size: 13px;
+}
+
+.panel-informacion {
+    line-height: 1.65;
+}
+
+.panel-informacion h3 {
+    color: var(--azul);
+    margin: 12px 0;
+}
+
+.panel-informacion p {
+    margin: 10px 0;
+    overflow-wrap: anywhere;
+}
+
+#mensaje-inicial {
+    color: #5c7380;
+}
+
+.imagen-informacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 140px;
+    margin: 10px 0;
+    background: #f0faff;
+    border-radius: 14px;
+}
+
+.imagen-informacion img {
+    width: 120px;
+    height: 125px;
+    object-fit: contain;
+}
+
+.seccion-quiz {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.seccion-quiz p {
+    margin: 12px 0 20px;
+}
+
+.boton-principal {
+    background: linear-gradient(135deg, #176b87, #279fc1);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 13px 22px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, filter 0.2s;
+}
+
+.boton-principal:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.08);
+}
+
+.quiz-container {
+    grid-column: 1 / -1;
+}
+
+.quiz-container[hidden],
+[hidden] {
+    display: none !important;
+}
+
+#progresoQuiz {
+    margin: 12px 0;
+    color: #526b79;
+    font-weight: bold;
+}
+
+.barra-progreso {
+    width: 100%;
+    height: 9px;
+    background: #e2edf2;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#progresoBarra {
+    width: 0;
+    height: 100%;
+    background: #279fc1;
+    transition: width 0.3s;
+}
+
+#preguntaQuiz {
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+
+.opciones-quiz {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.opcion-quiz {
+    border: 2px solid #d5e9f1;
+    background: #f7fcff;
+    color: var(--texto);
+    padding: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: left;
+    transition: background 0.2s;
+}
+
+.opcion-quiz:hover:not(:disabled) {
+    background: #e2f6ff;
+    border-color: #279fc1;
+}
+
+.opcion-quiz:disabled {
+    cursor: default;
+}
+
+.opcion-quiz.correcta {
+    background: #d9f8e4;
+    border-color: #2b9a5b;
+}
+
+.opcion-quiz.incorrecta {
+    background: #ffe2e2;
+    border-color: #d94c4c;
+}
+
+#resultadoQuiz {
+    margin-top: 18px;
+    font-weight: bold;
+}
+
+#puntuacionQuiz {
+    margin: 12px 0;
+    font-weight: bold;
+}
+
+#btnSiguiente,
+#btnReiniciar {
+    margin-top: 12px;
+}
+
+.pie-pagina {
+    text-align: center;
+    padding: 24px 12px;
+    background: #12475b;
+    color: white;
+    margin-top: 30px;
+}
+
+@media (max-width: 850px) {
+    .contenedor-principal {
+        grid-template-columns: 1fr;
+    }
+
+    .seccion-quiz,
+    .quiz-container {
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .encabezado {
+        gap: 10px;
+        padding: 20px 12px;
+    }
+
+    .logo {
+        font-size: 36px;
+    }
+
+    .tarjeta {
+        padding: 17px;
+    }
+
+    .opciones-quiz {
+        grid-template-columns: 1fr;
+    }
+}

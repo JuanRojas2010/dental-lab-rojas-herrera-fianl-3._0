@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simulador interactivo de los dientes humanos">
+    <title>Boca Interactiva | Simulador Dental</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="encabezado">
+    <div class="logo">🦷</div>
+    <div>
+        <h1>BOCA INTERACTIVA</h1>
+        <p>Explora los diferentes tipos de dientes</p>
+    </div>
+</header>
+
+<main class="contenedor-principal">
+
+    <section class="tarjeta simulador">
+        <h2>🦷 Simulador de la boca</h2>
+        <p class="instruccion">Haz clic en cualquiera de los dientes para conocer su nombre y función.</p>
+
+        <div class="boca-container">
+            <div class="boca">
+
+                <h3 class="titulo-arcada">ARCADA SUPERIOR</h3>
+                <div id="upper-teeth" class="teeth-row">
+
+                    <button class="tooth" data-id="18" aria-label="Diente 18"><img src="imagenes/molar-removebg-preview.png" alt="Molar"><span>18</span></button>
+                    <button class="tooth" data-id="17" aria-label="Diente 17"><img src="imagenes/molar-removebg-preview.png" alt="Molar"><span>17</span></button>
+                    <button class="tooth" data-id="16" aria-label="Diente 16"><img src="imagenes/molar-removebg-preview.png" alt="Molar"><span>16</span></button>
+                    <button class="tooth" data-id="15" aria-label="Diente 15"><img src="imagenes/premolar-removebg-preview.png" alt="Premolar"><span>15</span></button>
+                    <button class="tooth" data-id="14" aria-label="Diente 14"><img src="imagenes/premolar-removebg-preview.png" alt="Premolar"><span>14</span></button>
+                    <button class="tooth" data-id="13" aria-label="Diente 13"><img src="imagenes/canino-removebg-preview.png" alt="Canino"><span>13</span></button>
+                    <button class="tooth" data-id="12" aria-label="Diente 12"><img src="imagenes/Captura_de_pantalla_2026-10-13_135554-removebg-preview.png" alt="Incisivo"><span>12</span></button>
+                    <button class="tooth" data-id="11" aria-label="Diente 11"><img src="imagenes/Captura_de_pantalla_2026-10-13_135554-removebg-preview.png" alt="Incisivo"><span>11</span></button>
+                    <button class="tooth" data-id="21" aria-label="Diente 21"><img src="imagenes/Captura_de_pantalla_2026-10-13_135554-removebg-preview.png" alt="Incisivo"><span>21</span></button>
+                    <button class="tooth" data-id="22" aria-label="Diente 22"><img src="imagenes/Captura_de_pantalla_2026-10-13_135554-removebg-preview.png" alt="Incisivo"><span>22</span></button>
+                    <button class="tooth" data-id="23" aria-label="Diente 23"><img src="imagenes/canino-removebg-preview.png" alt="Canino"><span>23</span></button>
+                    <button class="tooth" data-id="24" aria-label="Diente 24"><img src="imagenes/premolar-removebg-preview.png" alt="Premolar"><span>24</span></button>
+                    <button class="tooth" data-id="25" aria-label="Diente 25"><img src="imagenes/premolar-removebg-preview.png" alt="Premolar"><span>25</span></button>
+                    <button class="tooth" data-id="26" aria-label="Diente 26"><img src="imagenes/molar-removebg-preview.png" alt="Molar"><span>26</span></button>
+                    <button class="tooth" data-id="27" aria-label="Diente 27"><img src="imagenes/molar-removebg-preview.png" alt="Molar"><span>27</span></button>
+                    <button class="tooth" data-id="28" aria-label="Diente 28"><img src="imagenes/molar-removebg-preview.png" alt="Molar"><span>28</span></button>
+
+                </div>
+
+                <div class="espacio-boca">
+                    <div class="lengua"></div>
+                </div>
+
+                <h3 class="titulo-arcada">ARCADA INFERIOR</h3>
+                <div id="lower-teeth" class="teeth-row">
+
+                    <button class="tooth" data-id="48" aria-label="Diente 48"><img src="imagenes/molar-removebg-preview.png" alt="Molar"><span>48</span></button>
+                    <button class="tooth" data-id="47" aria-label="Diente 47"><img src="imagenes/molar-removebg-preview.png" alt="Molar"><span>47</span></button>
+                    <button class="tooth" data-id="46" aria-label="Diente 46"><img src="imagenes/molar-removebg-preview.png" alt="Molar"><span>46</span></button>
+                    <button class="tooth" data-id="45" aria-label="Diente 45"><img src="imagenes/premolar-removebg-preview.png" alt="Premolar"><span>45</span></button>
+                    <button class="tooth" data-id="44" aria-label="Diente 44"><img src="imagenes/premolar-removebg-preview.png" alt="Premolar"><span>44</span></button>
+                    <button class="tooth" data-id="43" aria-label="Diente 43"><img src="imagenes/canino-removebg-preview.png" alt="Canino"><span>43</span></button>
+                    <button class="tooth" data-id="42" aria-label="Diente 42"><img src="imagenes/Captura_de_pantalla_2026-10-13_135554-removebg-preview.png" alt="Incisivo"><span>42</span></button>
+                    <button class="tooth" data-id="41" aria-label="Diente 41"><img src="imagenes/Captura_de_pantalla_2026-10-13_135554-removebg-preview.png" alt="Incisivo"><span>41</span></button>
+                    <button class="tooth" data-id="31" aria-label="Diente 31"><img src="imagenes/Captura_de_pantalla_2026-10-13_135554-removebg-preview.png" alt="Incisivo"><span>31</span></button>
+                    <button class="tooth" data-id="32" aria-label="Diente 32"><img src="imagenes/Captura_de_pantalla_2026-10-13_135554-removebg-preview.png" alt="Incisivo"><span>32</span></button>
+                    <button class="tooth" data-id="33" aria-label="Diente 33"><img src="imagenes/canino-removebg-preview.png" alt="Canino"><span>33</span></button>
+                    <button class="tooth" data-id="34" aria-label="Diente 34"><img src="imagenes/premolar-removebg-preview.png" alt="Premolar"><span>34</span></button>
+                    <button class="tooth" data-id="35" aria-label="Diente 35"><img src="imagenes/premolar-removebg-preview.png" alt="Premolar"><span>35</span></button>
+                    <button class="tooth" data-id="36" aria-label="Diente 36"><img src="imagenes/molar-removebg-preview.png" alt="Molar"><span>36</span></button>
+                    <button class="tooth" data-id="37" aria-label="Diente 37"><img src="imagenes/molar-removebg-preview.png" alt="Molar"><span>37</span></button>
+                    <button class="tooth" data-id="38" aria-label="Diente 38"><img src="imagenes/molar-removebg-preview.png" alt="Molar"><span>38</span></button>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="leyenda">
+            <span><b>Incisivos:</b> cortan</span>
+            <span><b>Caninos:</b> desgarran</span>
+            <span><b>Premolares:</b> aplastan</span>
+            <span><b>Molares:</b> trituran</span>
+        </div>
+    </section>
+
+    <section class="tarjeta panel-informacion" id="panel-informacion">
+        <h2>📘 Información del diente</h2>
+        <p id="mensaje-inicial">Selecciona un diente para descubrir sus características.</p>
+
+        <div class="imagen-informacion">
+            <img id="imagenDiente" src="imagenes/.png" alt="Diente seleccionado">
+        </div>
+
+        <h3 id="tituloDiente">Diente seleccionado</h3>
+
+        <p><b>Nombre:</b> <span id="nombreDiente">Sin seleccionar</span></p>
+        <p><b>Número:</b> <span id="numeroDiente">--</span></p>
+        <p><b>Tipo:</b> <span id="tipoDiente">--</span></p>
+        <p><b>Descripción:</b> <span id="descripcionDiente">--</span></p>
+        <p><b>Función:</b> <span id="funcionDiente">--</span></p>
+        <p><b>Ubicación:</b> <span id="ubicacionDiente">--</span></p>
+        <p><b>Cantidad de este tipo:</b> <span id="cantidadDiente">--</span></p>
+    </section>
+
+    <section class="tarjeta seccion-quiz">
+        <h2>🎓 ¿Cuánto has aprendido?</h2>
+        <p>Responde el cuestionario y comprueba tus conocimientos sobre los dientes.</p>
+        <button id="btnAbrirQuiz" class="boton-principal" type="button">IR AL QUIZ</button>
+    </section>
+
+    <section id="quiz" class="tarjeta quiz-container" hidden>
+        <h2>🧠 Quiz dental</h2>
+        <p id="progresoQuiz">Pregunta 1 de 5</p>
+        <div class="barra-progreso"><div id="progresoBarra"></div></div>
+
+        <h3 id="preguntaQuiz"></h3>
+        <div id="opcionesQuiz" class="opciones-quiz"></div>
+        <p id="resultadoQuiz" aria-live="polite"></p>
+        <p id="puntuacionQuiz"></p>
+
+        <button id="btnSiguiente" class="boton-principal" type="button" hidden>
+            SIGUIENTE
+        </button>
+        <button id="btnReiniciar" class="boton-principal" type="button" hidden>
+            VOLVER A JUGAR
+        </button>
+    </section>
+
+</main>
+
+<footer class="pie-pagina">
+    <p>🦷 Boca Interactiva · Aprende y cuida tu sonrisa</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
